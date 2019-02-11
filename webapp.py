@@ -1,5 +1,5 @@
 from flask import Flask,render_template #import flask library
-app=Flask(__name__)         #name to app obj
+app=Flask(__name__,template_folder='templates')         #name to app obj
 @app.route('/')             #first line / represents the route dir 
 def index():                 #definiton of '/' is home its is mandetery in this code 
     return render_template('index.html')    #content of that page...
